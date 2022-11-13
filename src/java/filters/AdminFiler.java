@@ -43,7 +43,7 @@ public class AdminFiler implements Filter {
             int newUserRoleID = newUser.get(email).getRole().getRoleId();
             if (newUserRoleID!=1) {
                 HttpServletResponse httpResponse = (HttpServletResponse)response;
-                httpResponse.sendRedirect("login");
+                httpResponse.sendRedirect("notes");
                 return;
             }
             
